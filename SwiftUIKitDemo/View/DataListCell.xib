@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataListCell" rowHeight="102" id="KGk-i7-Jjw" customClass="DataListCell" customModule="SwiftUIKitDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3S-Bm-tTB">
+                        <rect key="frame" x="10" y="10" width="300" height="82"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sbX-pa-h9u">
+                                <rect key="frame" x="20" y="11" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.80422621969999997" green="0.91091102359999998" blue="0.88470745090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HRr-8f-wSi"/>
+                                    <constraint firstAttribute="width" constant="60" id="XA9-J7-6Hq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZFg-xn-cBE">
+                                <rect key="frame" x="90" y="20" width="200" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6N-py-NeS">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="20.666666666666668"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpT-2e-rCD">
+                                        <rect key="frame" x="0.0" y="21.666666666666664" width="69.666666666666671" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80422621969999997" green="0.91091102359999998" blue="0.88470745090000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZFg-xn-cBE" firstAttribute="top" secondItem="H3S-Bm-tTB" secondAttribute="top" constant="20" id="0Yd-c3-Q3R"/>
+                            <constraint firstAttribute="bottom" secondItem="ZFg-xn-cBE" secondAttribute="bottom" constant="20" id="2H6-nm-alq"/>
+                            <constraint firstAttribute="trailing" secondItem="ZFg-xn-cBE" secondAttribute="trailing" constant="10" id="4Ye-xx-Ldm"/>
+                            <constraint firstItem="sbX-pa-h9u" firstAttribute="leading" secondItem="H3S-Bm-tTB" secondAttribute="leading" constant="20" id="6AO-hV-TKx"/>
+                            <constraint firstItem="ZFg-xn-cBE" firstAttribute="leading" secondItem="sbX-pa-h9u" secondAttribute="trailing" constant="10" id="WlP-QI-rzU"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sbX-pa-h9u" secondAttribute="bottom" constant="11" id="XWN-lU-6lk"/>
+                            <constraint firstItem="sbX-pa-h9u" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H3S-Bm-tTB" secondAttribute="top" constant="11" id="Xzm-NZ-Ju5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="H3S-Bm-tTB" secondAttribute="trailing" constant="10" id="UWf-a6-sOL"/>
+                    <constraint firstAttribute="bottom" secondItem="H3S-Bm-tTB" secondAttribute="bottom" constant="10" id="aOk-Yn-YTz"/>
+                    <constraint firstItem="H3S-Bm-tTB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aRs-bg-C6p"/>
+                    <constraint firstItem="H3S-Bm-tTB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jSg-cY-lQh"/>
+                    <constraint firstItem="sbX-pa-h9u" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uU8-hB-8RQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descrlbl" destination="XpT-2e-rCD" id="PI9-5k-Ejw"/>
+                <outlet property="imgView" destination="sbX-pa-h9u" id="naP-Bm-HCC"/>
+                <outlet property="title" destination="W6N-py-NeS" id="GPV-ci-i2j"/>
+            </connections>
+            <point key="canvasLocation" x="-6.1538461538461533" y="41.232227488151658"/>
+        </tableViewCell>
+    </objects>
+</document>
